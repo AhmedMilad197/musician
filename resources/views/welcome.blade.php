@@ -28,7 +28,7 @@
                     log in
                 </b>
             </div>
-            <form class = "form" action="/api/login" method="post">
+            <form class = "form" action="/login" method="post">
                 @csrf
                 <label for="email">email:</label><br>
                 <input class = "box inputField" type="email" id="email" name="email" placeholder="email"><br>
