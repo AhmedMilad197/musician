@@ -1,0 +1,41 @@
+.h1 {
+    text-align: center;
+    color: red;
+}
+
+.body {
+    background-color: black;
+}
+
+.formDiv {
+    display: block;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    border: 2px solid aquamarine;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 40px;
+    text-align: left;
+    border-style: solid;
+}
+
+.box {
+    border: 2px solid;
+    color: #000;
+}
+
+.box:hover {
+    border-color: aqua;
+}
+
+.inputField {
+    border-radius: 5px;
+    width: 250px;
+    height:30px
+}
