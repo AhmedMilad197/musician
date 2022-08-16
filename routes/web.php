@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome', ['name' => 'ahmed']);
+    return view('login', ['name' => 'ahmed']);
+});
+
+Route::post('/login', function (Request $request) {
+    echo $request->email;
+    echo $request->password;
 });

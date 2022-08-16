@@ -22,6 +22,8 @@
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
     </head>
     <body class = "body">
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0&appId=573471284252156&autoLogAppEvents=1" nonce="0zW220c2"></script>
         <div class = "formDiv" style = "color:gray; margin-top:200px">
             <div style = "margin-top:20px; text-align:center; background-color: rgba(26, 87, 167, 0.404); border-radius: 5px;">
                 <b>
@@ -35,10 +37,37 @@
                 <label for="password">password:</label><br>
                 <input class = "box inputField" type="password" id="password" name="password" placeholder="password">
                 <br>
-                <button class = "box" style = "border-radius: 5px; font-size: 16px; margin-top:20px" type="submit" name="submit"> submit </button>
+                <br><div class="fb-login-button" data-width="" data-size="medium" data-button-type="continue_with" data-layout="rounded" data-auto-logout-link="false" data-use-continue-as="true"></div>
+                <br><button class = "box" style = "border-radius: 5px; font-size: 16px; margin-top:20px" type="submit" name="submit"> submit </button>
             </form>
         </div>
 
+        <script>
+            window.fbAsyncInit = function() {
+              FB.init({
+                appId            : '573471284252156',
+                autoLogAppEvents : true,
+                xfbml            : true,
+                version          : 'v14.0'
+              });
 
+            FB.ui({
+                method: 'share',
+                href: 'https://developers.facebook.com/docs/'
+            }, function(response){});
+            };
+
+            FB.login(function(response) {
+            if (response.authResponse) {
+                console.log('Welcome!  Fetching your information.... ');
+            FB.api('/me', function(response) {
+                console.log('Good to see you, ' + response.name + '.');
+            });
+            } else {
+                console.log('User cancelled login or did not fully authorize.');
+            }
+        });
+        </script>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
     </body>
     </html>
