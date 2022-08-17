@@ -18,6 +18,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->foreignIdFor(Artist::class);
+            $table->timestamps();
             // genre to be implemented later
         });
     }

@@ -17,6 +17,7 @@ return new class extends Migration
         Schema::create('songs', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->unsignedBigInteger('likes');
             $table->foreignIdFor(Album::class);
             $table->timestamps();
         });

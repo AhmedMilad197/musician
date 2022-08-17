@@ -9,8 +9,20 @@ class Album extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
     public function artist()
     {
         return $this->belongsTo(Artist::class);
+    }
+
+    public function songs()
+    {
+        return $this->hasMany(Song::class);
+    }
+
+    public function filter($id)
+    {
+        return $this->songs->where('id', $id);
     }
 }
