@@ -55,6 +55,11 @@
     transition: 0.5s;
 }
 
+.nav-links li a:focus {
+    color: rgb(255, 255, 255);
+    /* transition: 0.5s; */
+}
+
 .nav-links li a i {
     size: 20px;
     margin-right: 5px;
