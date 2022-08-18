@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>musician</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -20,25 +20,70 @@
             }
         </style>
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d5ae0ef074.js" crossorigin="anonymous"></script>
     </head>
-    <body class = "body">
-        <div class = "formDiv" style = "color:gray; margin-top:200px">
-            <div style = "margin-top:20px; text-align:center; background-color: rgba(26, 87, 167, 0.404); border-radius: 5px;">
-                <b>
-                    log in
-                </b>
-            </div>
-            <form class = "form" action="/login" method="post">
-                @csrf
-                <label for="email">email:</label><br>
-                <input class = "box inputField" type="email" id="email" name="email" placeholder="email"><br>
-                <label for="password">password:</label><br>
-                <input class = "box inputField" type="password" id="password" name="password" placeholder="password">
-                <br>
-                <button class = "box" style = "border-radius: 5px; font-size: 16px; margin-top:20px" type="submit" name="submit"> submit </button>
-            </form>
-        </div>
+    <body>
+        <div class="header">
+            <div class="side-nav">
+                <a href="#" class="logo">
+                    <img src="{{url('/images/logos/mlogo.png')}}" alt="invalid image path" class="logo-img">
+                </a>
 
+                <ul class="nav-links">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                            <p>
+                                Home
+                            </p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <p>
+                                Search
+                            </p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-folder"></i>
+                            <p>
+                                Your Library
+                            </p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-square-plus"></i>
+                            <p>
+                                Create Playlist
+                            </p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>
+                                Liked Songs
+                            </p>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="active">
+
+
+                </div>
+
+            </div>
+        </div>
 
     </body>
     </html>

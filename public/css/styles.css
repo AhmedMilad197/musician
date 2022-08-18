@@ -1,41 +1,61 @@
-.h1 {
-    text-align: center;
-    color: red;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
 
-.body {
-    background-color: rgb(43, 45, 47);
+.header {
+    width: 100%;
+    height: 100vh;
+    background: rgb(43, 45, 47);
 }
 
-.formDiv {
-    display: block;
-    width: 400px;
-    height: 300px;
-    margin: auto;
-    border: 2px solid aquamarine;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.form {
-    display: inline-block;
-    margin-top: 30px;
-    margin-left: 40px;
-    text-align: left;
-    border-style: solid;
-}
-
-.box {
-    border: 2px solid;
-    color: #000;
-}
-
-.box:hover {
-    border-color: aqua;
-}
-
-.inputField {
-    border-radius: 5px;
+.side-nav {
     width: 250px;
-    height:30px
+    height: 100%;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px, 30px;
+}
+
+.logo {
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+
+.logo-img {
+    width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    position: relative;
+    padding-left: 50px;
+}
+
+.nav-links li {
+    padding: 10px 0px;
+}
+
+.nav-links li a {
+    color: rgb(179, 165, 110);
+    text-decoration: none;
+    opacity: 1;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li a:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.nav-links li a i {
+    size: 20px;
+    margin-right: 5px;
 }
