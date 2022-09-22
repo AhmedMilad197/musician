@@ -77,12 +77,13 @@
 
                 </ul>
 
-                <div class="active">
-
-
-                </div>
 
             </div>
+
+            <div class="active">
+                <p style="background-color: blue; width: 50px; height: 50px; text-align: center;">test</p>
+           </div>
+
         </div>
 
     </body>
