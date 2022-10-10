@@ -81,7 +81,10 @@
             </div>
 
             <div class="active">
-                <p style="background-color: blue; width: 50px; height: 50px; text-align: center;">test</p>
+                <a href="alcover1"><img src="{{url('/images/albums/NYC.jpeg')}}" alt="no image found"></a>
+                <a href="alcover2"><img src="{{url('/images/albums/alcover2.jpg')}}" alt="no image found"></a>
+                <a href="alcover4"><img src="{{url('/images/albums/alcover4.jpg')}}" alt="no image found"></a>
+                <a href="alcover5"><img src="{{url('/images/albums/alcover5.jpg')}}" alt="no image found"></a>
            </div>
 
         </div>
